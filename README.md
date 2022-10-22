@@ -7,6 +7,7 @@ An application that helps manage an employee database through command line.
 * nodeJS
 * Inquirer
 * MySQL
+* Console.table
 
 ## Repository:
 https://github.com/abdallahamdy/cms-tracker
