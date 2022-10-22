@@ -1,26 +1,31 @@
 INSERT INTO department (name)
 VALUES
-  ('Support'),
+  ('Engineering'),
   ('Sales'),
-  ('R&D');
+  ('Legal'),
+  ('Finance');
 
 INSERT INTO role (title, salary, department_id)
 VALUES
-  ('Support Engineer', 50000, 1),
-  ('Sales Engineer', 80000, 2),
-  ('Full Stack Engineer', 100000, 3),
-  ('Manager', 120000, 1);
+  ('Sales Lead', 100000, 2),
+  ('Salesperson', 80000, 2),
+  ('Lead Engineer', 150000, 1),
+  ('Software Engineer', 120000, 1),
+  ('Account Manager', 160000, 2),
+  ('Accountant', 125000, 4),
+  ('Legal Team Lead', 250000, 3),
+  ('Lawyer', 190000, 3);
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES
-  ('Alexia', 'Huff', 1, 1),
-  ('Keyon', 'Allison', 1, 1),
-  ('Allison', 'Huang', 1, 2),
-  ('Conrad', 'Mccarty', 2, 2),
-  ('Reagan', 'George', 2, 2),
-  ('Kamren', 'Delacruz', 2, 2),
-  ('Abbigail', 'Patton', 3, 3),
-  ('Abdullah', 'Floyd', 3, 3),
-  ('Kyle', 'Kemp', 3, 3),
-  ('Jadiel', 'Esparza', 4, 3),
-  ('Ella', 'Oconnell', 4, 3)
+  ('Alexia', 'Huff', 1, NULL),
+  ('Keyon', 'Allison', 2, NULL),
+  ('Allison', 'Huang', 3, NULL),
+  ('Conrad', 'Mccarty', 4, 1),
+  ('Reagan', 'George', 5, 1),
+  ('Kamren', 'Delacruz', 6, 2),
+  ('Abbigail', 'Patton', 7, 2),
+  ('Abdullah', 'Floyd', 8, 3),
+  ('Kyle', 'Kemp', 8, 3),
+  ('Jadiel', 'Esparza', 4, 2),
+  ('Ella', 'Oconnell', 4, 2)
